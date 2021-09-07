@@ -3,8 +3,8 @@ import RecipeComponent from "./RecipeComponent";
 import Axios from "axios";
 import "./Recipes.css";
 
-const APP_ID = "8771a6c0";
-const APP_KEY = "137b984cc47b70cf1ba65ccfd0d5906c";
+const APP_ID = "4e089f15";
+const APP_KEY = "95d1a7531e357d0b4cc1c22a72cdccdf";
 
 const AppComponent = () => {
   const [searchQuery, updateSearchQuery] = useState("");
