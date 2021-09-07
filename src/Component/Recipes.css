@@ -1,0 +1,16 @@
+
+.RecipeListContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 30px;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+.rimage{
+    display: flex;
+    width: 60px;
+    height: 30px;
+    margin: 0px 0px 0px 10px;
+}

@@ -1,0 +1,24 @@
+body {
+  font-family:sans-serif !important;
+}
+.text-slanted{
+  font-family: serif, cursive;
+}
+.text-orange {
+  color: #F15025;
+}
+.letter-spacing{
+  letter-spacing: 0.5rem;
+  
+}
+
+.header-hero, .default-hero {
+  min-height: calc(100vh - 56px);
+  
+  background: linear-gradient(rgba(241, 81, 37, 0.3), rgba(241, 81, 37, 0.3)),
+    url("./Images/HomePage.jpeg") center/cover no-repeat;
+}
+.default-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("./Images/Default.jpeg") center/cover no-repeat;
+}
