@@ -23,23 +23,13 @@ const AppComponent = () => {
     const timeout = setTimeout(() => fetchData(e.target.value), 500);
     updateTimeoutId(timeout);
   };
-
+  const onSubmit = e => {
+    e.preventDefault();
+   // fetchData();
+  }
   return (
     <div className= "Container">
-      {/* <div className="Header">
-        <div className="AppName"> */}
-          {/* <RecipeImage src="/react-recipe-finder/hamburger.svg" /> */}
-          {/* Recipe Finder */}
-        {/* </div>
-        <div className="SearchBox"> */}
-          {/* <SearchIcon src="/react-recipe-finder/search-icon.svg" /> */}
-          {/* <input className= "SearchInput"
-            placeholder="Search Recipe"
-            value={searchQuery}
-            onChange={onTextChange}
-          />
-        </div>
-      </div> */}
+      
       <div className="row">
       <div className="col-10 mx-auto col-md-8 mt-5 text-center">
           <h1 className="text-slanted text-capitalize">Search Recipes</h1>
@@ -48,7 +38,7 @@ const AppComponent = () => {
                 <input type="text" placeholder = "Enter the Ingridients" value={searchQuery}
                 onChange={onTextChange} className= "form-control"/>
                 <div className="input-group-append">
-                  <button className ="input-group-text bg-primary text white" >
+                  <button type ="submit" className ="input-group-text bg-primary text white" onClick={onSubmit}>
                     <i className = "fas fa-search" /></button>
                     </div>
                 </div>
